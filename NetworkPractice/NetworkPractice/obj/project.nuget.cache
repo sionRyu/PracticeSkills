@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tlXO/F0D5/SZ+HO/t4V0wGLnUC63eof5lTnnqU6HI2jG6IBPVF3FdSBMERtamdmWx8pmU0y9axJYs7aEXw+sFQ==",
+  "dgSpecHash": "oP6g+GbGnARL7yGtIv/0WycCxaBfFiAn0J1/l8Ei8RfisLiw/YGhbQ0Okey/KDQ79Py9e7CJ+rt4cxsjmQBTPA==",
   "success": true,
   "projectFilePath": "C:\\Users\\PC02\\OneDrive\\바탕 화면\\PracticeSkills\\NetworkPractice\\NetworkPractice\\NetworkPractice.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\PC02\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512"
+  ],
   "logs": []
 }
