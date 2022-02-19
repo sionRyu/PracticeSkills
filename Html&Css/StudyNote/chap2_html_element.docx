@@ -153,6 +153,7 @@ gif png처럼 로고나 클립 아트 형태의 이미지에 적합 256개의 �
 
 테이블에서 열과 행의 병합 
 rowspan, colspan
-<td rowspan="2">1행 1열</td>
-<td>1행 2열</td>
-<td>1행 3열</td>
+<td rowspan="2">1행 1열</td> 이렇게 쓰면 1행 1열을 세로로 2칸 잡아먹게
+<td colspan="3">3행 1열</td> 이렇게 쓰면 3행 1열을 가로로 3칸 잡아먹게
+
+테이블의 제목 <caption>....</caption>
