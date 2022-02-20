@@ -1,0 +1,69 @@
+멀티미디어와 입력 양식 
+<audio src="~~~.mp3" autoplay controls>추가할 내용</audio>
+속성에 autoplay controls loop preload src volume 등이 있음 각각 자동음악재생,오디오 재생 제어기 표시, 오디오 반복재생, 오디오 미리 다운로드, 재생할 오디오가 존재하는 url지정,볼륨 
+audio파일의 형식이(mp3,wav,ogg 등) 지원되지 않을 수 있기 때문에 <source> 태그 사용해서 위에서부터 순차적 검사 재생가능한 파일형식을 찾으면 더이상 검사 x
+
+ex> 
+<audio controls autoplay>
+    <source src="old_pop.ogg" type="audio/ogg">
+    <source src="old_pop.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+비디오
+<video src="movie.mp4" autoplay controls>추가할 내용</video>
+
+속성자체는 audio와 비슷
+
+ex>   
+<video width="640" height="480" controls>
+    <source src="trailer.mp4" type="video/ogg">    
+    <source src="trailer.ogv" type="video/ogg">
+    <p>Your user agent does not support HTML5.</p>
+</video>
+
+iframe은 책을 보라
+
+HTML 입력양식(form)
+
+1. 입력 양식에 데이터를 채워서 서버로 보낸 뒤
+2. 서버는 입력 양식을 받아서 jsp와 같은 서버 스크립트로 보낸다
+3. jsp는 입력 데이터를 처리하여서 새로운 웹페이지를 생성한다.
+4. 입력에 대한 응답으로 새로운 웹페이지가 전달된다. 
+
+<form action="input.jsp" method="post">
+    <input type="text" name="input" />
+    <input type="submit">
+</form>
+
+action 속성에는 사용자가 입력한 데이터를 받아서 처리하는 스크립트의 주소를 URL형식으로 적어준다.
+method 속성에는 데이터를 보내는 방법을 기술한다. POST와 GET방식이 있다.
+
+
+GET 방식 
+URL 주소에 사용자가 입력한 데이터를 붙이는 방법
+?를 기준으로 앞이 URL주소이고 ?기호 뒤에 오는 것이 파라미터가 됨.
+
+ex)     www.server.com/input.jsp?name1=value1&name2=value2
+URL주소에 담아서 보내기 때문에 비밀보장이 안됨 그러므로 패스워드 같은거 보낼 때 쓰지 말 것 
+최대 2048글자까지만 보낼 수 있음
+
+POST방식
+사용자가 입력한 데이터를 HTTP Request 헤더에 포함시켜서 전송하는 방식, 길이 제한이 없고 보안이 유지됨 
+
+ex)
+POST /test/input.jsp HTTP/1.1
+Host: www.naver.com
+name1=value1&name2=value2
+
+
+입력태그 (form 안에서 사용하는 것)
+<input> p84,85를 보자;
+텍스트 필드                                 <input type="text" name="~~~" size=(숫자)>
+라디오 => 둘 중 하나 선택                    <input type="radio" name="gender" value="male">남성,
+                                            <input type="radio" name="gender" value="female">여성  
+체크박스 => 여러 항목 동시 선택 가능         <input type="checkbox" name="fruits" value="apple" checked > Apple -> checked 써놓으면 미리 체크되있는거
+                                            <input type="checkbox" name="fruits" value="grape" > grape
+
+
+
