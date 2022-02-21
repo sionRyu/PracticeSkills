@@ -62,8 +62,8 @@ name1=value1&name2=value2
 텍스트 필드                                 <input type="text" name="~~~" size=(숫자)>
 라디오 => 둘 중 하나 선택                    <input type="radio" name="gender" value="male">남성,
                                             <input type="radio" name="gender" value="female">여성  
-체크박스 => 여러 항목 동시 선택 가능         <input type="checkbox" name="fruits" value="apple" checked > Apple -> checked 써놓으면 미리 체크되있는거
-                                            <input type="checkbox" name="fruits" value="grape" > grape
+체크박스 => 여러 항목 동시 선택 가능          <input type="checkbox" name="fruits" value="apple" checked > Apple -> checked 써놓으면 미리 체크되있는거
+                                           <input type="checkbox" name="fruits" value="grape" > grape
 
 
 
