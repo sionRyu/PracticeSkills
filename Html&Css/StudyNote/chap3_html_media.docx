@@ -64,6 +64,7 @@ name1=value1&name2=value2
                                             <input type="radio" name="gender" value="female">여성  
 체크박스 => 여러 항목 동시 선택 가능          <input type="checkbox" name="fruits" value="apple" checked > Apple -> checked 써놓으면 미리 체크되있는거
                                            <input type="checkbox" name="fruits" value="grape" > grape
-
+제출 버튼과 초기화 버튼
+                                            
 
 
